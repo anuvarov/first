@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    margin: 50px;
+    display: block;
+
+}
+
+input {
+    width: 35px;
+    margin: 5px;
+    padding: 3PX;
+    border-radius: 3px;
+}
+
+.btn {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 1px solid #fff;
+}
+
+.btn:hover{
+    cursor: pointer;
+}

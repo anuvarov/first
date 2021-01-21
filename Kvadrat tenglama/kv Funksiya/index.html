@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvadrat Funksiya</title>
+
+<style>
+.container {
+    text-align: center;
+    margin: 50px;
+    display: block;
+
+}
+
+input {
+    width: 35px;
+    margin: 5px;
+    padding: 3PX;
+    border-radius: 3px;
+}
+
+.btn {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 1px solid #fff;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="function">
+            <form>
+                <input type="number" placeholder="a" id="a">x^2+<input type="number" placeholder="b" id="b">x+ <input type="number" placeholder="c" id="c">=0
+<br>
+                <button class="btn" id="button" onclick="calculateF()" type="button" data-toogle="button" aria-pressed="false">Hisoblash</button>
+            </form>
+        </div>
+
+        <div id="result"></div>
+        <div id="resultx"></div>
+        <div id="resulty"></div>
+    </div>
+
+
+
+<script>
+
+function calculateF() {
+
+
+const aVal = document.getElementById('a');
+const bVal = document.getElementById('b');
+const cVal = document.getElementById('c');
+const result = document.getElementById('result');
+const resultx = document.getElementById('resultx');
+const resulty = document.getElementById('resulty');
+
+
+const a = parseFloat(aVal.value);
+const b = parseFloat(bVal.value);
+const c = parseFloat(cVal.value);
+
+let det = b*b - 4*a*c;
+
+let x1 = ((-b-(Math.sqrt(b*b - 4*a*c)))/(2*a))
+let y1 = ((-b+(Math.sqrt(b*b - 4*a*c)))/(2*a))
+
+result.textContent = `Diskriminanti: ${det}`
+
+resultx.textContent = `X1: ${x1}`
+resulty.textContent = `X2: ${y1}`
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
