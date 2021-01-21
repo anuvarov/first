@@ -3,95 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kvadrat Funksiya</title>
-
-<style>
-.container {
-    text-align: center;
-    margin: 50px;
-    display: block;
-
-}
-
-input {
-    width: 35px;
-    margin: 5px;
-    padding: 3PX;
-    border-radius: 3px;
-}
-
-.btn {
-    margin: 20px;
-    padding: 5px 10px;
-    border-radius: 1px solid #fff;
-}
-
-.btn:hover{
-    cursor: pointer;
-}
-
-</style>
-
-
-
-
+    <title>Mehmonxona</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <div class="function">
-            <form>
-                <input type="number" placeholder="a" id="a">x^2+<input type="number" placeholder="b" id="b">x+ <input type="number" placeholder="c" id="c">=0
-<br>
-                <button class="btn" id="button" onclick="calculateF()" type="button" data-toogle="button" aria-pressed="false">Hisoblash</button>
-            </form>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="#"></a>AFR</h1>
+                <UL>
+                    <li><a href="#" class="current">BOSH SAHIFA</a></li>
+                    <li><a href="#">MALUMOT UCHUN</a></li>
+                    <li><a href="#">BIZ BILAN ALOQA</a></li>
+                </UL>
+            </div>
+        </nav>
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                <h1><span class="text-primary">Bobomurod</span> Seni Joying</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestiae placeat, animi, ullam magni assumenda sit odio asperiores libero eligendi ipsa facere a vel. Quisquam eligendi quam nemo neque dolores.</p>
+                <a href="about.html" class="btn">Biz haqimizda</a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <section id="home-info" class="bg-dark">
+        <div class="info-img">
+        </div>
+        <div class="info-content">
+            <h2><span class="text-primary">Mehmonxona</span> Tarixi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore libero quaerat mollitia nihil velit vitae harum, quae et soluta iste maxime eum optio, odio praesentium neque totam quo modi obcaecati! Beatae, iusto ea? Tempora laudantium veritatis reprehenderit consequuntur excepturi illo modi deleniti nisi labore iste. Atque eos delectus voluptatem totam.</p>
+            <a href="about.html" class="btn btn-light">Ko'proq malumot</a>
+        </div>
+    </section>
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsum.</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fas fa-utensils fa-3x"></i>
+            <h3>Free meals</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsum.</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fas fa-dumbbell fa-3x"></i>
+            <h3>Fitness Room</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsum.</p>
+        </div>
+    </section>
+    <div class="clr"></div>
+
+
+
+<!-- ABOUT PAGE -->
+
+
+
+
+      
+
+    <section id="about-info" class="bg-light">
+        <div class="container">
+            <div class="info-left">
+                <h1><span class="text-primary">Bizning</span> Mehmonxona</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quis perspiciatis quia facilis nisi, provident aliquid doloremque tempora laborum voluptatibus consequatur sint culpa, odio a ducimus, autem ea quo officiis.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quis amet fuga minus laborum consectetur beatae vero modi laudantium maiores!</p>
+            </div>
+         <div class="info-right">
+             <img src="./IMG/pexels-pixabay-261102.jpg" alt="OUR BEAUTIFUL HOTEL">
+         </div>
         </div>
 
-        <div id="result"></div>
-        <div id="resultx"></div>
-        <div id="resulty"></div>
-    </div>
+    </section>
+    <div class="clr"></div>
+    <section id="testimonials">
+        <div class="container">
+            <h2>Mijozlarimiz fikri</h2>
 
+            <div class="testimonial bg-primary">
+                <img  src="IMG/pexels-marcus-aurelius-4063856.jpg" alt="ZOOM">
+                <P>;orem20
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minus omnis in quas adipisci molestias vero autem eligendi eum corporis quae, necessitatibus maxime, iusto qui officia delectus reprehenderit sint, doloremque suscipit nisi beatae. At temporibus dolor aut, dolorum fuga a eos voluptatum aliql Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, quae. uam amet magnam dolorem assumenda magni molestias nostrum?</P>
+            </div>
+            
+            <div class="testimonial bg-primary">
+                <img  src="IMG/pexels-wallace-chuck-4580470.jpg" alt="ZOOM">
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quibusdam velit assumenda blanditiis nemo ipsam commodi dolore molestiae, impedit doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minus omnis in quas adipisci molestias vero autem eligendi eum corporis quae, necessitatibus maxime, iusto qui officia delectus reprehenderit sint, doloremque suscipit nisi beatae. ias nostrum?</P>
+            </div>
 
+        </div>
+    </section>
 
-<script>
-
-function calculateF() {
-
-
-const aVal = document.getElementById('a');
-const bVal = document.getElementById('b');
-const cVal = document.getElementById('c');
-const result = document.getElementById('result');
-const resultx = document.getElementById('resultx');
-const resulty = document.getElementById('resulty');
-
-
-const a = parseFloat(aVal.value);
-const b = parseFloat(bVal.value);
-const c = parseFloat(cVal.value);
-
-let det = b*b - 4*a*c;
-
-let x1 = ((-b-(Math.sqrt(b*b - 4*a*c)))/(2*a))
-let y1 = ((-b+(Math.sqrt(b*b - 4*a*c)))/(2*a))
-
-result.textContent = `Diskriminanti: ${det}`
-
-resultx.textContent = `X1: ${x1}`
-resulty.textContent = `X2: ${y1}`
-
-
-}
-
-
-</script>
+    <div class="clr"></div>
+    
 
 
 
 
 
+<!-- CONTACT PAGE -->
 
 
+
+
+
+  
+ <section id="contact-form">
+     <div class="container">
+         <h1><span class="text-primary">Aloqa</span> Uchun</h1>
+         <p>Biz bilan bog'lanish uchun quyidagidagi formani to'ldiring</p>
+
+         <form action="">
+             <div class="from-group">
+                 <label for="name">Ism</label>
+                 <input type="text" id="name" name="name">
+             </div>
+             <div class="from-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="from-group">
+                <label for="message">Habar</label>
+                <textarea type="text" id="message" name="message"></textarea> 
+            </div>
+            <button class="btn">Jo'natish</button>
+         </form>
+     </div>
+ </section>
+
+ <section id="contact-info" class="bg-dark1">
+     <div class="container">
+           <div class="box">
+        
+              <i class="fas fa-hotel fa-3x"></i>
+              <h3>Manzil</h3>
+              <p>Toshkent shahar, Mirobod tuman, Nukus ko'cha, 123</p>
+            </div>
+
+            <div class="box">
+        
+              <i class="fas fa-phone fa-3x"></i>
+              <h3>Telefon:</h3>
+              <p>+998998180358 <br>+998333180358 <br><a href="tel:+998901103902">+998901103902</a></p>
+            </div>
+
+            <div class="box">
+        
+              <i class="fas fa-hotel fa-3x"></i>
+              <h3>Email</h3>
+              <p>Info@AFRhotel.com</p>
+            </div>
+     </div>
+ </section>
+    
+
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>Mehmonxona AFR &copy; 2020</p>
+    </footer>
 </body>
 </html>
